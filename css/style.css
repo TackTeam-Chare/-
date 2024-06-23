@@ -1,17 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+
 * {
   box-sizing: border-box;
+  font-family: 'Noto Sans Thai', sans-serif;
 }
-@font-face {
-  font-family: 'thaisanslite_r1';
-  src: url('font/thaisanslite_r1.woff2') format('woff2'),
-       url('font/thaisanslite_r1.woff') format('woff'),
-       url('font/thaisanslite_r1.ttf')  format('truetype');
+
+body {
+  text-align: center;
+  background-color: rgb(148, 16, 16);
 }
-body{
-    text-align :center;
-    background-color : rgb(148, 16, 16);
-    font-family: 'thaisanslite_r1', sans-serif;
-  }
+
+.textbox {
+  border: 3px solid #ffffff;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 25pt;
+  width: 100%;
+  margin-top: 10px;
+  box-shadow: -5px 11px 42px 11px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: -5px 11px 42px 11px rgba(255, 9, 9, 0.35);
+  -moz-box-shadow: -5px 11px 42px 11px rgba(255, 9, 9, 0.35);
+}
+
+.textbox:focus {
+  box-shadow: -5px 11px 42px 11px rgba(255, 9, 9, 0.35) inset;
+  -webkit-box-shadow: -5px 11px 42px 11px rgba(255, 9, 9, 0.35) inset;
+  -moz-box-shadow: -5px 11px 42px 11px rgba(255, 9, 9, 0.35) inset;
+}
   .textbox {
     border : 3px solid  #ffffff;
     height : 50px;

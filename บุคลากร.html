@@ -1,149 +1,153 @@
 <!doctype html>
 <html>
-    <head>
-        <title>ทำเนียบบุคลากร</title>
-        <link rel="icon" type="image/x-icon" href="img/spd_20150704164759_b.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="หน้าเเรก.html">
-                    <img src="img/spd_20150704164759_b.png" height="100" widget="100" alt="logo">
-                </a>
-                <h2>
-                    <span style="color: aliceblue;">เรือนจำอำเภอแม่สอด</span>
-                </h2>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="ti-menu"></span>
-                </button>
-                <div class="navbar-collapse collapse" id="navbarNav" style="color: #000;">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item dropdown active">
-                            <a class="nav-link " href="หน้าเเรก.html">
-                                หน้าแรก
-                  
-                                <span>
-                                    <i class="ti-angle-down"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown @@pages">
-                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-                                เกี่ยวกับเรือนจำ
-                  
-                                <span>
-                                    <i class="ti-angle-down"></i>
-                                </span>
-                            </a>
-                            <!-- Dropdown list -->
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item @@team" href="ประวัติเรือนจำ.html">ประวัติเรือนจำ</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item @@career" href="บุคลากร.html">ทำเนียบบุลคลกร</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item @@blog" href="เรือนจำอำเภอแม่สอด.html">ผลิตภัณฑ์</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item @@blogSingle" href="ข่าวประชาสัมพันธ์.html">ข่าวประชาสัมพันธ์</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">เอกสารดาวโหลด</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="พันธกิจ.html">พันธกิจ</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="ภารกิจ.html">ภารกิจ</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item @@about">
-                            <a class="nav-link" href="กิจกรรม.html">ระเบียบการเยี่ยมญาติ</a>
-                        </li>
-                        <li class="nav-item @@contact">
-                            <a class="nav-link" href="ติดต่อ.html">ติดต่อ</a>
-                        </li>
-                    </ul>
-                </div>
+<head>
+    <title>ทำเนียบบุคลากร</title>
+    <link rel="icon" type="image/x-icon" href="img/spd_20150704164759_b.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        @font-face {
+            font-family: 'thaisanslite_r1';
+            src: url('font/thaisanslite_r1.woff2') format('woff2'),
+                url('font/thaisanslite_r1.woff') format('woff'),
+                url('font/thaisanslite_r1.ttf') format('truetype');
+        }
+        body {
+            text-align: center;
+            background-color: #941010;
+            font-family: 'thaisanslite_r1', sans-serif;
+        }
+        .navbar-brand img {
+            height: 80px;
+            width: 80px;
+        }
+        .navbar-nav .nav-link {
+            font-size: 18px;
+        }
+        .main-content {
+            padding: 20px;
+            color: #fff;
+        }
+        .btn-outline-info {
+            color: #fff;
+            border-color: #fff;
+        }
+        .btn-outline-info:hover {
+            color: #941010;
+            background-color: #fff;
+            border-color: #fff;
+        }
+        .card {
+            background-color: #B34E4E;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            color: #fff;
+        }
+        .container-fluid {
+            background-color: #F8F9FA;
+            padding: 20px;
+        }
+        .container-fluid h4, .container-fluid p, .container-fluid a {
+            color: #000;
+        }
+        .container-fluid a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 480px) {
+            .navbar-brand img {
+                height: 50px;
+                width: 50px;
+            }
+            .navbar-nav .nav-link {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="หน้าเเรก.html">
+                <img src="img/spd_20150704164759_b.png" alt="logo">
+            </a>
+            <h2 class="text-white">เรือนจำอำเภอแม่สอด</h2>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="ti-menu"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="หน้าเเรก.html">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            เกี่ยวกับเรือนจำ
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <a class="dropdown-item" href="ประวัติเรือนจำ.html">ประวัติเรือนจำ</a>
+                            <a class="dropdown-item" href="บุคลากร.html">ทำเนียบบุลคลกร</a>
+                            <a class="dropdown-item" href="เรือนจำอำเภอแม่สอด.html">ผลิตภัณฑ์</a>
+                            <a class="dropdown-item" href="ข่าวประชาสัมพันธ์.html">ข่าวประชาสัมพันธ์</a>
+                            <a class="dropdown-item" href="#">เอกสารดาวโหลด</a>
+                            <a class="dropdown-item" href="พันธกิจ.html">พันธกิจ</a>
+                            <a class="dropdown-item" href="ภารกิจ.html">ภารกิจ</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="กิจกรรม.html">ระเบียบการเยี่ยมญาติ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ติดต่อ.html">ติดต่อ</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <main class="min-vh-100">
-            <div class="container py-4">
-                <div class="mt-2 aos-init aos-animate" data-aos="flip-down">
-                    <h2 class="mb-0">
-                        <span class="float-left">
-                            <i class="fas fa-star fa-sm fa-fw"></i>
-                            <span style="color: aliceblue;">ทำเนียบบุคลากร</span>
-                    </h2>
-                    <hr class="bg-info my-4" style="height:3px;">
-                </div>
-                <div class="mb-4 aos-init aos-animate" data-aos="flip-up">
-                    <div class="text-center">
-                        <img class="x1" src="img/ข้อมูลเจ้าหน้าที่2.jpg" height="500" width="800">
-                    </div>
-                    <br>
-                    <a href="แผนผังผู้บริหาร.html" class="btn btn-lg btn-block btn-outline-info" data-pjax="" data-pjax-state="">
-                        <span style="color: aliceblue;">แผนผังผู้บริหาร
-                    </a>
-                    <a href="ฝ่ายบริหารงานทั่วไป.html" class="btn btn-lg btn-block btn-outline-info" data-pjax="" data-pjax-state="">
-                        <span style="color: aliceblue;">ฝ่ายบริหารทั่วไป
-                    </a>
-                    <a href="แผนผังฝ่ายทัณฑปฏิบัติ.html" class="btn btn-lg btn-block btn-outline-info" data-pjax="" data-pjax-state="">
-                        <span style="color: aliceblue;">ฝ่ายทัณฑปฏิบัติ
-                    </a>
-                    <a href="แผนผังฝ่ายฝึกวิชาชีพ.html" class="btn btn-lg btn-block btn-outline-info" data-pjax="" data-pjax-state="">
-                        <span style="color: aliceblue;">ฝ่ายฝึกวิชาชีพ
-                    </a>
-                    <a href="แผนผังฝ่ายควบคุมและรักษาการ์ณ.html" class="btn btn-lg btn-block btn-outline-info" data-pjax="" data-pjax-state="">
-                        <span style="color: aliceblue;">ฝ่ายควบคุมและรักษาการณ์
-                    </a>
-                    <a href="ฝ่ายสวัสดิการผู้ต้องขังและสงเคราะห์ผู้ต้องขัง.html" class="btn btn-lg btn-block btn-outline-info" data-pjax="" data-pjax-state="">
-                        <span style="color: aliceblue;">ฝ่ายสวัสดิการผู้ต้องขังและสงเคราะห์ผู้ต้องขัง
-                    </a>
-                    <a href="ฝ่ายการศึกษา.html" class="btn btn-lg btn-block btn-outline-info" data-pjax="" data-pjax-state="">
-                        <span style="color: aliceblue;">ฝ่ายการศึกษา
-                    </a>
-                    <a href="แผนผังสถานพยาบาลเรือนจำ.html" class="btn btn-lg btn-block btn-outline-info" data-pjax="" data-pjax-state="">
-                        <span style="color: aliceblue;">ฝ่ายสถานพยาบาลเรือนจำ
-                    </a>
-                    <a href="แผนผังแดนหญิง.html" class="btn btn-lg btn-block btn-outline-info" data-pjax="" data-pjax-state="">
-                        <span style="color: aliceblue;">งานควบคุมแดนหญิง
-                    </a>
-                    <a href="ฝ่ายรักษาการ์ณ.html" class="btn btn-lg btn-block btn-outline-info" data-pjax="" data-pjax-state="">
-                        <span style="color: aliceblue;">ฝ่ายรักษาการณ์
-                    </a>
-                    <a href="ฝ่ายควบคุม.html" class="btn btn-lg btn-block btn-outline-info" data-pjax="" data-pjax-state="">
-                        <span style="color: aliceblue;">ฝ่ายควบคุม
-                    </a>
-                </div>
-            </div>
-        </main>
-        <div class="container-fluid text-center py-5 bg-light">
-            <img src="img/spd_20150704164759_b.png" style="height:100px;" class="mb-2">
-            <h4 class="mb-0">เรือนจำอำเภอแม่สอด</h4>
-            <p>เลขที่ 2 ถนนราชทัณฑ์ ตำบลแม่สอด อำเภอแม่สอด จังหวัดตาก 63110</p>
-            <h5 class="mb-0">
-                <a class="text-decoration-none text-reset" href="tel:055531226">
-                    <i class="fas fa-phone fa-sm fa-fw"></i>
-                    โทรศัพท์ 055-531-226 
-                </a>
-                &nbsp;|&nbsp;
-                <a class="text-decoration-none text-reset" href="https://www.facebook.com/%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%99%E0%B8%88%E0%B8%B3%E0%B8%AD%E0%B8%B3%E0%B9%80%E0%B8%A0%E0%B8%AD%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%AA%E0%B8%AD%E0%B8%94-107480434310698" rel="nofollow" target="_blank">
-                    <i class="fab fa-facebook fa-sm fa-fw"></i>
-                    Facebook 
-                </a>
-                &nbsp;|&nbsp;<a class="text-decoration-none text-reset" href="055532826">โทรสาร 055-532826</a>
-            </h5>
         </div>
-    </body>
+    </nav>
+    <main class="main-content">
+        <div class="container py-4">
+            <h2>ทำเนียบบุคลากร</h2>
+            <hr class="bg-info my-4" style="height:3px;">
+            <div class="text-center">
+                <img src="img/ข้อมูลเจ้าหน้าที่2.jpg" alt="เจ้าหน้าที่" class="img-fluid" style="max-width: 100%; height: auto;">
+            </div>
+            <br>
+            <div class="d-flex flex-column">
+                <a href="แผนผังผู้บริหาร.html" class="btn btn-lg btn-block btn-outline-info my-2">แผนผังผู้บริหาร</a>
+                <a href="ฝ่ายบริหารงานทั่วไป.html" class="btn btn-lg btn-block btn-outline-info my-2">ฝ่ายบริหารทั่วไป</a>
+                <a href="แผนผังฝ่ายทัณฑปฏิบัติ.html" class="btn btn-lg btn-block btn-outline-info my-2">ฝ่ายทัณฑปฏิบัติ</a>
+                <a href="แผนผังฝ่ายฝึกวิชาชีพ.html" class="btn btn-lg btn-block btn-outline-info my-2">ฝ่ายฝึกวิชาชีพ</a>
+                <a href="แผนผังฝ่ายควบคุมและรักษาการ์ณ.html" class="btn btn-lg btn-block btn-outline-info my-2">ฝ่ายควบคุมและรักษาการณ์</a>
+                <a href="ฝ่ายสวัสดิการผู้ต้องขังและสงเคราะห์ผู้ต้องขัง.html" class="btn btn-lg btn-block btn-outline-info my-2">ฝ่ายสวัสดิการผู้ต้องขังและสงเคราะห์ผู้ต้องขัง</a>
+                <a href="ฝ่ายการศึกษา.html" class="btn btn-lg btn-block btn-outline-info my-2">ฝ่ายการศึกษา</a>
+                <a href="แผนผังสถานพยาบาลเรือนจำ.html" class="btn btn-lg btn-block btn-outline-info my-2">ฝ่ายสถานพยาบาลเรือนจำ</a>
+                <a href="แผนผังแดนหญิง.html" class="btn btn-lg btn-block btn-outline-info my-2">งานควบคุมแดนหญิง</a>
+                <a href="ฝ่ายรักษาการ์ณ.html" class="btn btn-lg btn-block btn-outline-info my-2">ฝ่ายรักษาการณ์</a>
+                <a href="ฝ่ายควบคุม.html" class="btn btn-lg btn-block btn-outline-info my-2">ฝ่ายควบคุม</a>
+            </div>
+        </div>
+    </main>
+    <div class="container-fluid text-center py-5">
+        <img src="img/spd_20150704164759_b.png" style="height:100px;" class="mb-2">
+        <h4 class="mb-0">เรือนจำอำเภอแม่สอด</h4>
+        <p>เลขที่ 2 ถนนราชทัณฑ์ ตำบลแม่สอด อำเภอแม่สอด จังหวัดตาก 63110</p>
+        <h5 class="mb-0">
+            <a class="text-decoration-none text-reset" href="tel:055531226">
+                <i class="fas fa-phone fa-sm fa-fw"></i> โทรศัพท์ 055-531-226 
+            </a>
+            &nbsp;|&nbsp;
+            <a class="text-decoration-none text-reset" href="https://www.facebook.com/%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%99%E0%B8%88%E0%B8%B3%E0%B8%AD%E0%B8%B3%E0%B9%80%E0%B8%A0%E0%B8%AD%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%AA%E0%B8%AD%E0%B8%94-107480434310698" rel="nofollow" target="_blank">
+                <i class="fab fa-facebook fa-sm fa-fw"></i> Facebook
+            </a>
+        </h5>
+    </div>
+</body>
 </html>

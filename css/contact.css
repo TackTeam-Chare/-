@@ -1,4 +1,9 @@
-/* Base styling */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
 :root {
   --main-bg-color: #942222;   /* Dark red tone */
   --main-text-color: #f8f9fa; /* Creamy white for readability */
@@ -9,16 +14,7 @@
   --footer-text-color: #333;  /* Dark grey for footer text */
 }
 
-* {
-  box-sizing: border-box;
-}
 
-@font-face {
-  font-family: 'thaisanslite_r1';
-  src: url('font/thaisanslite_r1.woff2') format('woff2'),
-       url('font/thaisanslite_r1.woff') format('woff'),
-       url('font/thaisanslite_r1.ttf')  format('truetype');
-}
 
 body {
   text-align: center;
